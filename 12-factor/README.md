@@ -10,6 +10,9 @@ A twelve-factor app always track a codebase in a version control system (git is 
 **A twelve-factor app never relies on implicit existence of system-wide packages.** Always declare explicitly in dependencies manifest like `Gemfile` or `pom.xml` or `build.gradle` or `package.json`, it would simplifies the setup as the new developer can just checkout code and run install command.
 
 ## 3. Config
+> Store config in the environment
+
+Config file are most likely differ between deploys, like *development*, *staging* or *production* usually contain like backing service credential like database host, username and password. This shouldn't be saved as constant in program which are the violation of twelve-factor. Each app required to have strict separation between config and code.
 ## 4. Backing Service
 ## 5. Build, Release, run
 ## 6. Processes
