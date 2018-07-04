@@ -36,7 +36,10 @@ It's a unique name for a Kafka stream; it is an ID given to a Kafka stream that 
 of data from the producer  
 
 ## Setting up Kafka on virtual machine
+* Install virtual box and vagrant 
 
+## Additional Info to Learn
+(Apache Flink) [https://flink.apache.org/]
 
 
 
