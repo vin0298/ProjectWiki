@@ -10,18 +10,34 @@ Kafka ia distributed streaming platform
 Insert image
 
 ## Core Components of Kafka
-1. Producer  
+1. **Producer**  
 Send messages to the Kafka cluster  
-2. Kafka Cluster  
+2. **Kafka Cluster**  
 Bunch of brokers running in group of computers  
-3. Stream Processors  
+3. **Stream Processors**  
 Constant stream of messages  
-4. Consumers  
+4. **Consumers**  
 Reads, process the data and/or push it back to the Kafka cluster  
-5. Connectors  
+5. **Connectors**  
 Imports data from the database to Kafka, including the other way around  
 
 ## Core Concepts of Kafka
+1. **What is a producer?**  
+It is an application that sends messages to Kafka (not a recipient address) where messages are small to medium sized piece of data  
+2. **Consumer**  
+The consumer is an application that reads data from Kafka by requesting messages from Kafka  
+3. **Broker**  
+The broker is the Kafka server where it acts as the dealer or "broker" between the producer and consumer. It deals the data from the
+producer that the consumer requests  
+4. **Cluster**  
+It is a group of compputers sharing workloads when processing the data  
+5. **Topic**  
+It's a unique name for a Kafka stream; it is an ID given to a Kafka stream that the consumer can use to request that specific group
+of data from the producer  
+
+
+
+
 
 
 
