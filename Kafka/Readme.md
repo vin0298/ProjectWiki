@@ -30,10 +30,13 @@ The consumer is an application that reads data from Kafka by requesting messages
 The broker is the Kafka server where it acts as the dealer or "broker" between the producer and consumer. It deals the data from the
 producer that the consumer requests  
 4. **Cluster**  
-It is a group of compputers sharing workloads when processing the data  
+It is a group of computers sharing workloads when processing the data  
 5. **Topic**  
 It's a unique name for a Kafka stream; it is an ID given to a Kafka stream that the consumer can use to request that specific group
 of data from the producer  
+
+## Setting up Kafka on virtual machine
+
 
 
 
