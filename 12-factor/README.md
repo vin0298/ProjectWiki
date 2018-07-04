@@ -1,6 +1,7 @@
 # 12 Factor App Manifesto
-
+Read full blog [here](https://12factor.net)
 ## 1. Codebase
+
 ## 2. Dependencies
 ## 3. Config
 ## 4. Backing Service
