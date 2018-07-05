@@ -5,3 +5,4 @@ A container image is a lightweight, stand-alone, executable package of a piece o
 ## Container is basically like a virtual machine. Instead of virtualizing the hardware, it virtualizes the operating system
 
 
+![Compare](comparison.png)
