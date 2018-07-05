@@ -19,6 +19,10 @@ Config file are most likely differ between deploys, like *development*, *staging
 **The code for a twelve-factor app makes no distinction between local and third party services.** Always treat backing services as a attached resource that accessed via url declared in **config**, so that resources can be attached to and detached from deploys at will. 
 
 ## 5. Build, Release, run
+> Strictly separate build and run stages
+
+**The twelve-factor app uses strict separation between the build, release, and run stages.** For example, it is impossible to make changes to the code at runtime, since there is no way to propagate those changes back to the build stage. Each release should have an identifier
+
 ## 6. Processes
 ## 7. Port Binding
 ## 8. Concurrency
