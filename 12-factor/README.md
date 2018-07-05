@@ -47,5 +47,14 @@ In the twelve-factor app, processes are a first class citizen.
 The twelve-factor app’s processes are disposable, meaning they can be started or stopped at a moment’s notice. Processes should also be robust against sudden death, in the case of a failure in the underlying hardware.
 
 ## 10. Dev/Prod parity
+> Keep development, staging, and production as similar as possible
+
+The twelve-factor app is designed for continuous deployment by keeping the gap between development and production small.
 ## 11. Logs
+> Treat logs as event streams
+
+**A twelve-factor app never concerns itself with routing or storage of its output stream.** It should not attempt to write to or manage logfiles. Instead, each running process writes its event stream, unbuffered, to stdout. During local development, the developer will view this stream in the foreground of their terminal to observe the app’s behavior.
+
 ## 12. Admin Event
+> Run admin/management tasks as one-off processes
+
