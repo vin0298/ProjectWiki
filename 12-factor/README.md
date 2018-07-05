@@ -14,6 +14,10 @@ A twelve-factor app always track a codebase in a version control system (git is 
 
 Config file are most likely differ between deploys, like *development*, *staging* or *production* usually contain like backing service credential like database host, username and password. This shouldn't be saved as constant in program which are the violation of twelve-factor. Each app required to have strict separation between config and code.
 ## 4. Backing Service
+> Treat backing services as attached resources
+
+**The code for a twelve-factor app makes no distinction between local and third party services.** Always treat backing services as a attached resource that accessed via url declared in **config**, so that resources can be attached to and detached from deploys at will. 
+
 ## 5. Build, Release, run
 ## 6. Processes
 ## 7. Port Binding
