@@ -35,10 +35,17 @@ The twelve-factor app is completely self-contained and does not rely on runtime 
 
 
 ## 8. Concurrency
+> Scale out via the process model
+
 ![1](https://12factor.net/images/process-types.png)
 
 In the twelve-factor app, processes are a first class citizen.
+
 ## 9. Disposability
+> Maximize robustness with fast startup and graceful shutdown
+
+The twelve-factor app’s processes are disposable, meaning they can be started or stopped at a moment’s notice. Processes should also be robust against sudden death, in the case of a failure in the underlying hardware.
+
 ## 10. Dev/Prod parity
 ## 11. Logs
 ## 12. Admin Event
