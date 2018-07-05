@@ -6,3 +6,7 @@ A container image is a lightweight, stand-alone, executable package of a piece o
 
 
 ![Compare](comparison.png)
+
+Even simpler Container explaination ([YouTube](https://www.youtube.com/watch?v=IEGPzmxyIpo))<br>
+Container in 1 Minute ([YouTube](https://www.youtube.com/watch?v=n-JwAM6XF88))<br>
+Container in kubernetes ([Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/#why-containers))
