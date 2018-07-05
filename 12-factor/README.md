@@ -29,8 +29,15 @@ Config file are most likely differ between deploys, like *development*, *staging
 **Twelve-factor processes are stateless and share-nothing.** All data that need to be persist should be stored in a stateful backing service typically database. Some web usually use sticky-session, this violate the twelve-factor manifesto and session should be stored in a datastore such as memcache or Redis.  
 
 ## 7. Port Binding
+> Export services via port binding
+
+The twelve-factor app is completely self-contained and does not rely on runtime injection of a webserver into the execution environment to create a web-facing service. The web app exports HTTP as a service by binding to a port, and listening to requests coming in on that port.
+
 
 ## 8. Concurrency
+![1](https://12factor.net/images/process-types.png)
+
+In the twelve-factor app, processes are a first class citizen.
 ## 9. Disposability
 ## 10. Dev/Prod parity
 ## 11. Logs
