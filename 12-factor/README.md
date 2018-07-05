@@ -24,7 +24,12 @@ Config file are most likely differ between deploys, like *development*, *staging
 **The twelve-factor app uses strict separation between the build, release, and run stages.** For example, it is impossible to make changes to the code at runtime, since there is no way to propagate those changes back to the build stage. Each release should have an identifier
 
 ## 6. Processes
+> Execute the app as one or more stateless processes
+
+**Twelve-factor processes are stateless and share-nothing.** All data that need to be persist should be stored in a stateful backing service typically database. Some web usually use sticky-session, this violate the twelve-factor manifesto and session should be stored in a datastore such as memcache or Redis.  
+
 ## 7. Port Binding
+
 ## 8. Concurrency
 ## 9. Disposability
 ## 10. Dev/Prod parity
