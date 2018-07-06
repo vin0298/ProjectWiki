@@ -38,7 +38,12 @@ of data from the producer
 ## Fault Tolerance in Kafka
 When creating a topic, we are required to provide the **replication factor**. The replication factor refers to the number of copies of the partition that is being processed that is present in the cluster. In the cluster, there will always be a **leader** and **followers**, the total number of followers is dependent on the number of followers. For instance, if the replication factor is 3, then there will be 1 leader and 2 followers. If a leader ran into a problem when processing the data, the next follower will become the new leader.
 
-## Setting up Kafka on virtual machine
+## Setting up Kafka with barito-flow locally
+* Install go: brew install go
+* 
+
+
+## Setting up Kafka on virtual machine (DO NOT DO FOLLOW THIS)
 * Install virtual box and vagrant 
 * Vagrant up (will execute the Vagrant File)
 * Vagrant ssh  
