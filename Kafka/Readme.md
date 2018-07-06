@@ -35,8 +35,18 @@ It is a group of computers sharing workloads when processing the data
 It's a unique name for a Kafka stream; it is an ID given to a Kafka stream that the consumer can use to request that specific group
 of data from the producer  
 
+## Fault Tolerance in Kafka
+When creating a topic, we are required to provide the **replication factor**. The replication factor refers to the number of copies of the partition that is being processed that is present in the cluster. In the cluster, there will always be a **leader** and **followers**, the total number of followers is dependent on the number of followers. For instance, if the replication factor is 3, then there will be 1 leader and 2 followers. If a leader ran into a problem when processing the data, the next follower will become the new leader.
+
 ## Setting up Kafka on virtual machine
 * Install virtual box and vagrant 
+* Vagrant up (will execute the Vagrant File)
+* Vagrant ssh  
+* cd to /etc/kafka  
+* To start the zookeeper:  
+  * sudo /etc/kafka/kafka_2.11-0.11.0.1/bin/zookeeper-server-start.sh /etc/kafka/config/zookeeper.properties  
+* To start the server:  
+  * sudo /etc/kafka/kafka_2.11-0.11.0.1/bin/kafka-server-start.sh /etc/kafka/config/server.properties  
 
 ## Additional Info to Learn
 (Apache Flink) [https://flink.apache.org/]
