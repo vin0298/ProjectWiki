@@ -9,7 +9,8 @@ Type on the terminal, change the "hashicorp/precise64" with the box you need. Al
 ```
 vagrant box add hashicorp/precise64
 ```
-This will create a VM called "default". To customize VM configuration, you can edit the vagrantfile on the current directory.<br>
+This will create a VM called "default". To customize VM configuration, you can edit the vagrantfile on the current directory. The vagrantfile can be used to automate VM setup (package installation, etc)<br>
+
 Tutorial on configuring the vagrantfile can be found [here](https://www.youtube.com/watch?v=pofWJAHynfU&index=6&list=PLMWwct3_kb-358XZdnN66zb3HaU97DSQ0)<br>
 Tutorial on setting up multiple VM can be found [here](https://www.youtube.com/watch?v=RSslFGH1Vjw)
 
