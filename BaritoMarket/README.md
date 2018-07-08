@@ -7,13 +7,22 @@ Click [here](https://github.com/BaritoLog/BaritoMarket) for further explanation.
 There's explanation on the link above about how to setup locally the BaritoMarket for development. But here's the thing you can do if error's happening:
 
 * PG:Bad Connection: Connection Refused
-- please do the below command to solve this(Mac)
-`brew services restart postgresql`
+  - please do the below command to solve this(Mac)
+    ```
+    brew services restart postgresql
+    ```
 
 * psql: FATA:: role "postgres" does not exist
-- try to login to your postgres db
-`psql -d postgres`
-  and then run this command
-`\du`
-  If there is no user called "postgres", then create one with this
-  `CREATE USER "username" SUPERUSER;`
+  - try to login to your postgres db
+    ```
+    psql -d postgres
+    ```
+  - and then run this command
+    ```
+    \du
+    ```
+  - If there is no user called "postgres", then create one with this
+    ```
+    CREATE USER "username" SUPERUSER;
+    ```
+  - try again
