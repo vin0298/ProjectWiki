@@ -37,6 +37,18 @@ It's a unique name for a Kafka stream; it is an ID given to a Kafka stream that 
 of data from the producer  
 6. **Offset**  
 It's a sequence number to a partition. It's immutable and arranged in order of arrival  
+7. **Group Coordinator**  
+Handles the joining/exiting of consumers in a consumer group ; the group leader handles the rebalance activity.
+
+## Producer Workflow (Disclaimer: Info taken from demo with Java)  
+1. The producer will serialise the key and value into a byte array (Kafka cluster can only understand bytes)  
+2. The producer will send the record to the partitioner and assign the partition number  
+* If a message key is specified, Kafka will hash the key and not use the partition number  
+* Else, it will try to evenly spread the partitions using a round-robin algorithm  
+3. The producer will keep the partition in a partition buffer and send it to the broker in batches  
+* The size of the buffer can be determined in the producer's properties  
+4. If the broker can receive the data, it will send the producer a RecordMetaData object  
+5. If not, an error will be sent where it can be retry (suppose the leader is down)  
 
 **How to locate a message?**  
 * Find the topic name -> Look at the partition number -> Find the offset
