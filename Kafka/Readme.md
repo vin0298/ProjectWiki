@@ -8,7 +8,7 @@ Kafka is a distributed streaming platform
 ## Why Kafka  
 Advantages against other message queue systems: 
 
-Insert image
+[https://www.google.co.id/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjYi9GRo5LcAhXYdysKHTfAC3oQjRx6BAgBEAU&url=http%3A%2F%2Fwww.allprogrammingtutorials.com%2Ftutorials%2Fgetting-started-with-apache-kafka.php&psig=AOvVaw3amVW8rYT3xdndtl1MTC7y&ust=1531234484222207]
 
 ## Core Components of Kafka
 1. **Producer**  
