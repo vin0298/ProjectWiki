@@ -3,9 +3,10 @@ Read official documentation on Kafka [here](https://kafka.apache.org/intro)
 Watch a youtube playlist about Kafka [here](https://www.youtube.com/watch?v=kDx8hZhvCQ0&index=7&list=PLkz1SCf5iB4enAR00Z46JwY9GGkaS2NON)  
 
 ## What is Kafka?
-Kafka ia distributed streaming platform
+Kafka is a distributed streaming platform
 
-## Why Kafka
+## Why Kafka  
+Advantages against other message queue systems: 
 
 Insert image
 
