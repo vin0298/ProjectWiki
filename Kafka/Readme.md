@@ -61,7 +61,17 @@ Isr = In-sync replicas
 
 ## Setting up Kafka with barito-flow locally
 * Install go: brew install go
-* 
+* Download the latest kafka version  
+* Unzip: tar -xzf kafka_2.11-1.1.0.tgz
+* Change directory to that folder: cd kafka_2.11-1.1.0.tgz  
+* Setup the zookeeper: bin/zookeeper-server-start.sh config/zookeeper.properties
+* Setup the server(brokers): bin/kafka-server-start.sh config/server.properties
+* Clone barito-flow: git clone git@github.com:BaritoLog/barito-flow.git (CLONE IT ON $GOPATH/src)
+* cd barito-flow
+* go build 
+* cd $GOPATH/bin  
+* run ./barito-flow p and ./barito-flow c  
+
 
 ## Setting up Kafka on virtual machine (DO NOT FOLLOW THIS)
 * Install virtual box and vagrant 
