@@ -24,13 +24,13 @@ brew install influxdb
       influxd -config /usr/local/etc/influxdb.conf
    ```
  - Start the influx to get in to the influx system:
- ```
-   Influx
- ```
+   ```
+      influx
+   ```
  - Or this command to see the time column in RFC3339 format:
- ```
-   Influx -precision rfc3339
- ```
+   ```
+      influx -precision rfc3339
+   ```
  
 - Create your first Database
   ```
